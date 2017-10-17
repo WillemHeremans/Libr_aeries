@@ -1,0 +1,43 @@
+body, html {
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+  float: none;
+  display: inline;
+}
+
+li a {
+    font-size:2.5em;
+    text-decoration: none;
+    color: grey;
+    padding: 14px 16px;
+
+}
+
+img {
+        page-break-inside: avoid;
+        max-width: 100% !important;
+    }
+
+li img {
+float: none;
+position: relative;
+}
+
+section {
+  position:inherit;
+	z-index: 1;
+	top: 0;
+	left: 0;
+  margin-left: 25%;
+ margin-top: 15%;
+	width: 100%;
+	height: 100%;
+}
