@@ -1,0 +1,29 @@
+body {margin:0;}
+ul {
+  list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 70px 16px;
+    text-decoration: none;
+}
+
+li img {
+  width: 75%;
+  page-break-inside: avoid;
+  max-width: 100% !important;
+  }
