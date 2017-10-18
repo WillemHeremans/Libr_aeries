@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="icon" type="image/png" href="fav.png">
 
 	<link rel="stylesheet" href="./styles/menu.css"/>
 <title><?php echo $lang['PAGE_TITLE']; ?></title>
