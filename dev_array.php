@@ -10,15 +10,35 @@
 
 <body>
 
-
 <?php
-function displayRandomPhotoArea() {
-    $photoAreas = array("./images/cover/cover1.png", "./images/cover/cover2.png", "./images/cover/cover3.png", "./images/cover/cover4.png");
 
-    echo $photoAreas[0] ;
+$root = '';
+$path = './images/cover/';
+$imgList = getImagesFromDir($root . $path);
+$img = getRandomFromArray($imgList);
+
+function getImagesFromDir($path) {
+    $images = array();
+    if ( $img_dir = @opendir($path) ) {
+        while ( false !== ($img_file = readdir($img_dir)) ) {
+            // checks for gif, jpg, png
+            if ( preg_match("/(\.gif|\.jpg|\.png)$/", $img_file) ) {
+                $images[] = $img_file;
+            }
+        }
+        closedir($img_dir);
+    }
+    return $images;
+}
+
+function getRandomFromArray($ar) {
+    $num = array_rand($ar);
+    return $ar[$num];
 }
 
 ?>
+
+<img src="<?php echo $path . $img ?>" alt="" />
 
 </body>
 </html>

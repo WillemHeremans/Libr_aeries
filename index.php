@@ -17,11 +17,11 @@
 
 	<div class="enfant" id="languages">
 
-		<ul>
-			<li class="lang"><img src="./images/logo.png" alt="logo"></li>
-			<li class="lang"><a href="menu.php?lang=en">Welcome</a></li>
-			<li class="lang"><a href="menu.php?lang=nl">Welkom</a></li>
-			<li class="lang"><a href="menu.php?lang=fr">Bienvenue</a></li>
+		<ul class="welcome">
+			<li class="welcome"><img src="./images/logo.png" alt="logo"></li>
+			<li class="welcome"><a href="menu.php?lang=en">Welcome</a></li>
+			<li class="welcome"><a href="menu.php?lang=nl">Welkom</a></li>
+			<li class="welcome"><a href="menu.php?lang=fr">Bienvenue</a></li>
 		</ul>
 
 </div>

@@ -1,28 +1,42 @@
-body {margin:0;}
-ul {
+body, html {
+  margin:0;
+  background-color: #e6ffe6;
+}
+
+ul.menu {
   list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: ;
+  position: fixed;
+  top: 0;
 }
 
-li {
-    float: left;
+li.menu {
+ float: left;
 }
 
-li a {
+li.menu a {
     display: block;
-    color: white;
+    color: grey;
     text-align: center;
     padding: 70px 16px;
     text-decoration: none;
 }
 
-li img {
+input {
+  background-color: #e6ffe6;
+  border: 1.5px solid grey;
+}
+
+input[type=text]:focus {
+    border: 3px solid grey;
+
+}
+
+li.menu img {
   width: 75%;
   page-break-inside: avoid;
   max-width: 100% !important;
